@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android", "web"],
+  "ios": {
+    "modules": ["ExpoIproovModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.iproov.ExpoIproovModule"]
+  }
+}

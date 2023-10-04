@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-iproov": ["../src/index"],
+      "expo-iproov/*": ["../src/*"]
+    }
+  }
+}
