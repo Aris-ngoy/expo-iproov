@@ -35,7 +35,7 @@ Run `npx pod-install` after installing the npm package.
 
 ### Configure for Android
 ```
-no configure for android
+no need for configuration
 ```
 
 
@@ -111,8 +111,7 @@ IProov.launch('wss://eu.rp.secure.iproov.me/ws', "< YOUR TOKEN >", options, (eve
 	}
 })
 ```
-
-* [iProov Biometrics Bare react native sdk](https://github.com/iProov/react-native.git)
+* [The original Iproov react-native sdk](https://github.com/iProov/react-native.git)
 
 
 # Contributing
