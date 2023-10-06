@@ -19,6 +19,9 @@ For bare React Native projects, you must ensure that you have [installed and con
 
 ```
 npm install expo-iproov
+yarn add expo-iproov
+bun install expo-iproov
+
 ```
 
 ### Configure for iOS

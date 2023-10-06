@@ -1,6 +1,6 @@
 {
   "name": "expo-iproov",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -19,7 +19,9 @@
     "react-native",
     "expo",
     "expo-iproov",
-    "ExpoIproov"
+    "ExpoIproov",
+    "iproov",
+    "KYC"
   ],
   "repository": "https://github.com/Aris-ngoy/expo-iproov",
   "bugs": {
