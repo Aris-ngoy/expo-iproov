@@ -80,10 +80,12 @@ android {
 }
 
 repositories {
-  mavenCentral()
+    mavenCentral()
+    maven { url 'https://raw.githubusercontent.com/iProov/android/master/maven/' }
 }
 
 dependencies {
   implementation project(':expo-modules-core')
+  implementation('com.iproov.sdk:iproov:9.0.0')
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getKotlinVersion()}"
 }
