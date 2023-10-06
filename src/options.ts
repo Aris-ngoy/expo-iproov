@@ -78,3 +78,20 @@ export class Options {
 
     static VIBRANT = 'vibrant';
 }
+
+enum EventType {
+  EVENT_CONNECTING,
+  EVENT_CONNECTED,
+  EVENT_PROCESSING,
+  EVENT_SUCCESS,
+  EVENT_FAILURE,
+  EVENT_CANCELLED,
+  EVENT_ERROR,
+}
+
+export const eventType: EventType = EventType.EVENT_CONNECTING;
+
+export interface IproovEvent {
+    name : EventType
+    params : any
+}

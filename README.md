@@ -32,6 +32,24 @@ npx expo prebuild
 
 Run `npx pod-install` after installing the npm package.
 
+```json
+add this to app.json file inside ios
+
+ "infoPlist": {
+    "NSCameraUsageDescription": "This app uses the camera to scan your face"
+ }
+
+ it should look like this 
+ "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "expo.modules.iproov.example",
+    "infoPlist": {
+    "NSCameraUsageDescription": "This app uses the camera to scan your face"
+    }
+}
+
+```
+
 
 ### Configure for Android
 ```

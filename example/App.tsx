@@ -6,10 +6,11 @@ export default function App() {
 
 
   const launchIproov = () => {
-    const token = "0a4aa02d9132fbfb6fd92a3983147fe5c74044cea8c0d6b64d0fc68f1801vi07"
-    ExpoIproov.launch('wss://eu.rp.secure.iproov.me/ws', token, { 
-      enableScreenshots : true,
-    }, (event: any) => {
+    let options = new ExpoIproov.Options()
+    options.enableScreenshots = true
+   
+    const token = "a634d5561d26d0bd0f920370b53168efe2bc0cc03390876c27521f911801vi07"
+    ExpoIproov.launch('wss://eu.rp.secure.iproov.me/ws', token, options, (event) => {
       console.log(event.name)
       console.log(JSON.stringify(event))
     })

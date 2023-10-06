@@ -2,6 +2,7 @@ import { Subscription } from 'expo-modules-core';
 import ExpoIproovModule from './ExpoIproovModule';
 import { convertColorsToARGB, objectToSnakeCase } from './utils';
 import { expoIproovEventEmitter } from './expoIproovEventEmitter';
+import { IproovEvent, Options } from './options';
 
 const { constants } = ExpoIproovModule 
 
@@ -20,7 +21,7 @@ export function hello(): string {
   return ExpoIproovModule.hello();
 }
 
-export function launch(baseUrl, token, options, listener) {
+export function launch(baseUrl : string, token : string, options : Options, listener : (event: IproovEvent) => void) {
   registerDelegateListeners(listener)
   const snakeCaseOptions = objectToSnakeCase(options)
   const snakeCaseOptionsWithARGBColors = convertColorsToARGB(snakeCaseOptions)
@@ -57,12 +58,11 @@ function registerDelegateListeners(listener) {
   ]
 
   events.forEach((eventType) => {
-    eventEmitter.addListener(eventType, (event) => {
+    eventEmitter.addListener<IproovEvent>(eventType, (event) => {
       listener({
         name: eventType,
         params: event
       })
-
       if (terminalEvents.includes(eventType)) {
         removeAllListeners(eventEmitter)
       }
@@ -79,4 +79,7 @@ function removeAllListeners(eventEmitter) {
   eventEmitter.removeAllListeners(EVENT_CANCELLED)
   eventEmitter.removeAllListeners(EVENT_ERROR)
 }
+
+export { Options } from './options'
+
 
