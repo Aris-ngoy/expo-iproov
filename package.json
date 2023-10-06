@@ -1,7 +1,7 @@
 {
   "name": "expo-iproov",
-  "version": "1.0.0",
-  "description": "My new module",
+  "version": "1.0.1",
+  "description": "The iProov Biometrics React Native SDK wraps iProov's native iOS (Swift) and Android (Java) SDKs behind a JavaScript interface for use from within your React Native iOS or Android app",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
