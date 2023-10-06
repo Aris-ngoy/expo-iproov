@@ -16,7 +16,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "expo.modules.iproov.example"
+      "bundleIdentifier": "expo.modules.iproov.example",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan your face"
+      }
     },
     "android": {
       "adaptiveIcon": {

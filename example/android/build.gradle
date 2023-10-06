@@ -36,5 +36,6 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://www.jitpack.io' }
+        maven { url "https://raw.githubusercontent.com/iProov/android/master/maven/" }
     }
 }
