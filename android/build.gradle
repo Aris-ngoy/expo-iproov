@@ -28,6 +28,7 @@ buildscript {
 
   repositories {
     mavenCentral()
+    maven { url 'https://raw.githubusercontent.com/iProov/android/master/maven/' }
   }
 
   dependencies {
