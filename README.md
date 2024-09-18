@@ -24,6 +24,13 @@ bun install expo-iproov
 
 ```
 
+### Add the plugins to app.json / app.config.js
+```
+ "plugins": [
+   "expo-iproov"
+ ]
+```
+
 ```
 npx expo prebuild
 ```
